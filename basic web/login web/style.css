@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: #222;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 850px;
+  height: 450px;
+  background: linear-gradient(140deg, #111, #333);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SIDE BOX */
+.side-box {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, #ff7a33, #b32b00);
+  padding: 40px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+/* FORMS */
+.form-box {
+  width: 50%;
+  padding: 40px;
+  position: absolute;
+  transition: 0.7s ease;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #ff7a33, #cc3300);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+span {
+  color: #ff7a33;
+  cursor: pointer;
+}
+
+/* ANIMATION PART */
+.register {
+  transform: translateX(120%);
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.container.active .register {
+  transform: translateX(0%);
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.container {
+  background: linear-gradient(140deg, #1a1c31, #2c2f5c);
+}
+
+.side-box {
+  background: linear-gradient(120deg, #6a5cff, #3e2aff);
+}
+
+.btn {
+  background: linear-gradient(120deg, #6a5cff, #3e2aff);
+}
+
+span {
+  color: #6a5cff;
+}
